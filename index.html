@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CUSTOM SNEAKERS</title>
+      <link rel="shortcut icon" href="./IMG/Logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="Catalago.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="navegacion">
+            <a href="./index.html" class="catalogo">Productos</a>
+         </nav>
+         <div class="logo">
+            <p class="custom">CUSTOM</p>
+            <p class="sneakers">SNEAKERS</p>
+         </div>
+         <!-- Carrito -->
+         <div class="Carrito">
+            <div class="img_Carrito">
+               <p class="count_product">0</p>
+               <img src="./IMG/Carrito.png" alt="Carrito" id="img_Carr">
+            </div>
+            <div class="Carrito_De_Productos">
+               <p class="Cerrar_Carrito">X</p>
+               <h1>Mi Carrito</h1>
+               <div class="Carrito_Items"></div>
+               <div class="contenedor_precio">
+                  <h2>Total: $</h2>
+                  <h2 class="price_num">0</h2>
+                  <h2>MXN</h2>
+               </div>
+               <div class="Finalizar__Vaciar">
+                  <p class="Finalizar_Compra">Finalizar Compra</p>
+                  <p class="Vaciar_Carrito">Vaciar Carrito</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="carrito_vacio">
+            <div class="contenido_vacio">
+               <p class="vacio_text">Tu carrito se encuentra vacio</p>
+            </div>
+         </div>
+
+         <!-- Finalizar Compra -->
+         <div class="Contenedor_Todo_Form">
+            <div class="formulario_flotante formulario_flotante_close">
+               <p class="Cerrar_Formulario">X</p>
+               <form action="" method="post" name="form">
+                  <h2 class="formulario__title">Finalizar Compra</h2>
+
+                  <div class="Contenido_Finalizar"></div>
+                  <div class="precio_Final">
+                     <h2>Total: $</h2>
+                     <h2 class="precio_Final_Num"></h2>
+                     <h2>MXN</h2>
+                  </div>
+                  
+                  <h3 class="formulario__campos">Campos obligatorios*</h3>
+               
+                  <input type="text" name="nombre" placeholder="Nombre:" minlength="4" class="formulario__cuadros" required>
+                  <input type="text" name="apellidos" placeholder="Apellidos:" minlength="4" class="formulario__cuadros" required>
+                  <input type="text" name="telefono" placeholder="Teléfono:" maxlength="12" minlength="10" class="formulario__cuadros" required>
+
+                  <input type="text" name="municipio" placeholder="Municipio:" class="formulario__cuadros" required>
+                  <input type="text" name="colonia" placeholder="Colonia:" class="formulario__cuadros" required>
+                  <input type="text" name="calle" placeholder="Calle:" class="formulario__cuadros" required>
+               
+                  <div class="flex2__f2">
+                     <h4 class="formulario__entre__calle">Entre la calle</h4>
+                     <input type="text" name="entre" class="formulario__cuadros formulario__entre">
+                     <h4 class="formulario__entre__calle">Y</h4>
+                     <input type="text" name="lacalle" class="formulario__cuadros formulario__entre">
+                  </div>
+               
+                  <textarea name="casa" placeholder="Caracteristicas del domicilio" minlength="15" class="formulario__casa" required></textarea>
+               
+                  <label for="" class="formulario__pisos">
+                     <div class="pisos__flex">
+                        <div class="pisos__center">
+                           <h4 class="pisos__title">Planta Baja</h4>
+                           <input type="checkbox" name="planta baja" class="piso__check">
+                        </div>
+                     </div>
+                     <div class="pisos__flex">
+                        <div class="pisos__center">
+                           <h4 class="pisos__title">1 Piso</h4>
+                           <input type="checkbox" name="1 piso" class="piso__check">
+                        </div>
+                     </div>
+                     <div class="pisos__flex">
+                        <div class="pisos__center">
+                           <h4 class="pisos__title">2 Pisos</h4>
+                           <input type="checkbox" name="2 pisos" class="piso__check">
+                        </div>
+                     </div>
+                     <div class="pisos__flex">
+                        <div class="pisos__center">
+                           <h4 class="pisos__title">3 pisos</h4>
+                           <input type="checkbox" name="3 pisos" class="piso__check">
+                        </div>
+                     </div>
+                     <div class="pisos__flex__edificio">
+                        <div class="pisos__center">
+                           <h4 class="pisos__title">Edificio</h4>
+                           <input type="checkbox" name="edificio" class="piso__check">
+                        </div>
+                     </div>
+                  </label>
+               
+                  <h4 class="formulario__entrega">¿Que día quieres que sea la entrega?</h4>
+                  <center>
+                     <select class="formulario__dia" name="dia">
+                        <option>Qualquier día</option>
+                        <option>Lunes</option>
+                        <option>Martes</option>
+                        <option>Miercoles</option>
+                        <option>Jueves</option>
+                        <option>Viernes</option>
+                        <option>Sabado</option>
+                        <option>Domingo</option>
+                     </select>
+                  </center>
+               
+                  <div class="formulario__boton">
+                     <input type="submit" value="Enviar formato de pago a mi correo electronico" class="formulario__enviar">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </header>
+
+      <div class="scrol"></div>
+      
+      <main>
+         <!-- Pestaña Flotante -->
+         <div class="contenedor__flotante">
+            <div class="Contenido">
+               <p class="close">X</p>
+               <div class="container">
+                  <div class="img_container">
+                     <img src="" alt="" class="main_img">
+                  </div>
+                  <div class="thumbnail_container">
+                     <img src="" alt="" class="thumbnail active">
+                     <img src="" alt="" class="thumbnail">
+                     <img src="" alt="" class="thumbnail">
+                  </div>
+               </div>
+               <div class="Informacion">
+                  <div>
+                     <h2 class="Modelo"></h2>
+                  </div>
+                  <div class="precio_Flotante">
+                     <p class="precio_Total">Total: $</p>
+                     <p class="precio_Numero"></p>
+                     <p class="precio_MXN">MXN</p>
+                  </div>
+                  <div class="Content_Tallas">
+                     <p class="Title_Tallas">Tallas</p>
+                     <select class="Options_Tallas">
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                     </select>
+                  </div>
+                  <a href="" class="Buy-Buton">Añadir al Carrito</a>
+                  <div class="descipction">
+                     <h3 class="descripcion__titulo">Descripcion</h3>
+                     <p class="descripcion__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur impedit culpa nostrum illo laborum doloremque! Dignissimos sequi cupiditate sunt natus adipisci dolores cum, fugit facilis quasi necessitatibus iste blanditiis nihil animi architecto fuga recusandae provident voluptate quam temporibus deserunt dolore neque libero. Praesentium totam odit velit harum necessitatibus, vel illo.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Para Abrir Pestaña Flotante -->
+         <div class="productos">
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Baby Yoda.png" alt="" class="Cambio_Img Active">
+               <h2 class="Modelo">Baby Yoda</h2>
+               <p class="Precio">$ 1090.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Bob.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Bob Esponja</h2>
+               <p class="Precio">$ 1090.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Broly.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Dragon Ball</h2>
+               <p class="Precio">$ 1190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Cencillo Negro y Rojo.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Sencillo Negro y Rojo</h2>
+               <p class="Precio">$ 990.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Cencillo Negro.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Sencillo Negro</h2>
+               <p class="Precio">$ 990.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Cencillo Rojo y nego Derretido.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Sencillo Rojo</h2>
+               <p class="Precio">$ 990.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Homero.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Los Simpson</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Normal Azul y Naranja Derretido.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Naranja y Azul</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Normal Rojo y Gris.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Rojo y Gris</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Normal Rojo y Negro Salpicado.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Extreme</h2>
+               <p class="Precio">$ 1,090.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Rick and Morty.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Rick and Morty</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Sencillo Amarillo y Negro.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Amarillo y Negro</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Trazo Bob.png" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Trazo de Bob Esponja</h2>
+               <p class="Precio">$ 1,090.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Dragon Ball.webp" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Goku y Vegetta</h2>
+               <p class="Precio">$ 1,190.00 MXN</p>
+            </div>
+            <div class="Productos_Contenido">
+               <img src="./IMG/Catalago/Stich.jfif" alt="" class="Cambio_Img">
+               <h2 class="Modelo">Stitch</h2>
+               <p class="Precio">$ 1,090.00 MXN</p>
+            </div>
+         </div>
+      </main>
+
+      <footer>
+         <div class="Contacto">
+            <a href="" class="A-content">
+               <img src="./IMG/Iconos/WhatsApp.png" alt="" class="WhatsApp">
+               <p class="Contacto-Iconos-text">WhatsApp</p>
+            </a>
+            <a href="" class="A-content">
+               <img src="./IMG/Iconos/Facebook.png" alt="" class="Facebook">
+               <p class="Contacto-Iconos-text">Facebook</p>
+            </a>
+            <a href="" class="A-content">
+               <img src="./IMG/Iconos/instagram.png" alt="" class="instagram">
+               <p class="Contacto-Iconos-text">Instagram</p>
+            </a>
+         </div>
+         <h2 class="Titulo-Final">&copy; Custom Sneakers</h2>
+      </footer>
+
+
+      
+
+      <script src="./JS/Finalizar Compra Flotante.js"></script>
+      <script src="./JS/Finalizar Compra.js"></script>
+
+      <script src="./JS/Carrito Flotante.js"></script>
+      <script src="./JS/Carrito.js"></script>
+
+      <script src="./JS/Flotante.js"></script>
+      <script src="./JS/Cambio.js"></script>
+   </body>
+</html>
